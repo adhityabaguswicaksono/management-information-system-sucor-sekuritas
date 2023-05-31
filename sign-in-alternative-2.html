@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/icon-web.png" />
+    <title>Sign In - Management Information System</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <!-- Framework Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body
+    class="font-cera bg-[url('./assets/background-2.jpg')] bg-center bg-cover bg-no-repeat"
+  >
+    <div
+      class="flex items-center justify-center lg:items-stretch lg:justify-end min-h-screen bg-gradient-to-t lg:bg-gradient-to-l from-sucor-500 to-transparent"
+    >
+      <div
+        class="flex items-center justify-center lg:items-stretch lg:justify-end min-h-screen p-8"
+      >
+        <div
+          class="bg-opacity-50 backdrop-blur-md bg-white text-sucor-500 flex flex-col justify-center content-center rounded-xl px-12 py-16 col-span-3 lg:col-span-1"
+        >
+          <!-- Start Form Sign In -->
+          <div class="flex flex-col">
+            <div class="flex flex-col mb-12">
+              <img
+                src="./assets/logo-sucor-sekuritas-blue.png"
+                alt="Logo Sucor Sekuritas"
+                class="w-full mb-10 max-w-[200px] self-center"
+              />
+              <h1 class="text-3xl font-cera-bold text-center">Sign In</h1>
+              <h2 class="mt-5 text-2xl font-cera-bold text-center">
+                Management Information System
+              </h2>
+            </div>
+
+            <form action="#" method="POST">
+              <div>
+                <label for="email" class="block mb-2">Email Address</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter Email Address"
+                  class="bg-white border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-sucor-500 block w-full p-2.5 duration-300 focus:ring-0 focus:border-sucor-500 focus:outline-none"
+                  autofocus
+                  autocomplete
+                  required
+                />
+              </div>
+
+              <div class="mt-4">
+                <label for="password" class="block mb-2">Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Enter Password"
+                  class="bg-white border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-sucor-500 block w-full p-2.5 duration-300 focus:ring-0 focus:border-sucor-500 focus:outline-none valid:tracking-widest valid:duration-0 placeholder:tracking-normal"
+                  required
+                />
+              </div>
+
+              <button
+                type="submit"
+                class="w-full mt-8 outline outline-1 outline-white rounded-md bg-sucor-500 px-4 py-3 text-white duration-300 hover:bg-sucor-700"
+              >
+                Sign In
+              </button>
+            </form>
+          </div>
+          <!-- End Form Sign In -->
+
+          <!-- Start Footer -->
+          <footer class="mt-10">
+            <div class="text-sucor-500 text-center text-sm">
+              <p>
+                Hak Cipta ©
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                <span class="font-cera-bold">Sucor Sekuritas</span>
+              </p>
+              <p>Semua Hak Dilindungi</p>
+            </div>
+          </footer>
+          <!-- End Footer -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Stand Alone Script -->
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
