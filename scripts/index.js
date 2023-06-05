@@ -20,6 +20,3 @@ tailwind.config = {
     },
   },
 };
-module.exports = {
-  prefix: "fb-",
-};
